@@ -39,7 +39,7 @@ PRO_SH.siz \
 all: PRO_SH.elf secondary-outputs
 
 # Tool invocations
-PRO_SH.elf: $(OBJS) D:/PRO-SH/PRO_SH/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
+PRO_SH.elf: $(OBJS) F:/ANCIT_Projects/PRO_SH/Project_Settings/Linker_Files/S32K144_64_flash.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Standard S32DS C Linker'
 	arm-none-eabi-gcc -o "PRO_SH.elf" "@PRO_SH.args"  $(USER_OBJS) $(LIBS)

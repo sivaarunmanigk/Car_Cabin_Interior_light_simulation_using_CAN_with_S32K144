@@ -1,5 +1,5 @@
 -T
-"D:/PRO-SH/PRO_SH/Project_Settings/Linker_Files/S32K144_64_flash.ld"
+"F:/ANCIT_Projects/PRO_SH/Project_Settings/Linker_Files/S32K144_64_flash.ld"
 -Wl,-Map,"PRO_SH.map"
 -Xlinker
 --gc-sections
@@ -10,7 +10,7 @@
 -mfpu=fpv4-sp-d16
 -specs=nano.specs
 -specs=nosys.specs
---sysroot="C:/NXP/S32DS.3.5/S32DS/build_tools/gcc_b1620/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
+--sysroot="F:/S32-1/S32DS/build_tools/gcc_b1620/gcc-6.3-arm32-eabi/arm-none-eabi/newlib"
 "./Project_Settings/Startup_Code/startup_S32K144.o"
 "./SDK/platform/devices/S32K144/startup/system_S32K144.o"
 "./SDK/platform/devices/startup.o"
@@ -30,4 +30,5 @@
 "./board/peripherals_flexcan_config_1.o"
 "./board/peripherals_osif_1.o"
 "./board/pin_mux.o"
+"./src/interior_light_model.o"
 "./src/main.o"
