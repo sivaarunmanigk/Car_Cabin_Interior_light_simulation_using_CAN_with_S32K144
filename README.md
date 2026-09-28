@@ -297,7 +297,7 @@ The system was tested on the actual **S32K144** development board using CAN mess
 
 **DEMO VIDEO**
 
-▶️ **[Watch the demo video](https://youtu.be/jqoHr25aoh0)**
+▶️ **[CAN-Based Automotive Interior Light Control ECU](https://youtu.be/82CvMpu7INU)**
 
 ---
 
