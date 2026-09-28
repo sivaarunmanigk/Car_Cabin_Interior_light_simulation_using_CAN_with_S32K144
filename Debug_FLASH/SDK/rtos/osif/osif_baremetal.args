@@ -1,8 +1,13 @@
 -std=c99
 -DCPU_S32K144HFT0VLLT
 -DCPU_S32K144
--I../SDK/rtos/osif
 -I../SDK/platform/drivers/inc
+<<<<<<< HEAD
+=======
+-I../SDK/platform/drivers/src/ftm
+-I../SDK/platform/pal/inc
+-I../SDK/rtos/osif
+>>>>>>> 848f3a0 (final_commit)
 -I"F:/ANCIT_Projects/PRO_SH/board"
 -I"F:/ANCIT_Projects/PRO_SH/SDK/platform/devices/common"
 -I"F:/ANCIT_Projects/PRO_SH/SDK/platform/devices"

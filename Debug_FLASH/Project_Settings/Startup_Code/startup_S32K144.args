@@ -1,6 +1,11 @@
 -c
--I../SDK/rtos/osif
 -I../SDK/platform/drivers/inc
+<<<<<<< HEAD
+=======
+-I../SDK/platform/drivers/src/ftm
+-I../SDK/platform/pal/inc
+-I../SDK/rtos/osif
+>>>>>>> 848f3a0 (final_commit)
 -I"F:/ANCIT_Projects/PRO_SH/board"
 -x assembler-with-cpp
 -g3

@@ -45,6 +45,16 @@
 			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/drivers/src/flexcan/doxygen/flexcan_driver.dox</locationURI>
 		</link>
 		<link>
+			<name>doc/SDK/platform/drivers/src/ftm/doxygen/ftm_driver.dox</name>
+			<type>1</type>
+			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/drivers/src/ftm/doxygen/ftm_driver.dox</locationURI>
+		</link>
+		<link>
+			<name>doc/SDK/platform/drivers/src/ftm/doxygen/ftm_pwm_driver.dox</name>
+			<type>1</type>
+			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/drivers/src/ftm/doxygen/ftm_pwm_driver.dox</locationURI>
+		</link>
+		<link>
 			<name>doc/SDK/platform/drivers/src/interrupt/doxygen/interrupt.dox</name>
 			<type>1</type>
 			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/drivers/src/interrupt/doxygen/interrupt.dox</locationURI>
@@ -53,6 +63,11 @@
 			<name>doc/SDK/platform/drivers/src/pins/doxygen/pins.dox</name>
 			<type>1</type>
 			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/drivers/src/pins/doxygen/pins.dox</locationURI>
+		</link>
+		<link>
+			<name>doc/SDK/platform/pal/src/pwm/doxygen/pwm_pal.dox</name>
+			<type>1</type>
+			<locationURI>S32SDK_S32K1XX_RTM_4.0.1/platform/pal/src/pwm/doxygen/pwm_pal.dox</locationURI>
 		</link>
 		<link>
 			<name>doc/SDK/platform/drivers/src/clock/S32K1xx/doxygen/clock_S32K1xx.dox</name>

@@ -16,7 +16,19 @@ src/main.o: ../src/main.c \
  ../SDK/platform/drivers/inc/edma_driver.h \
  F:/ANCIT_Projects/PRO_SH/board/peripherals_osif_1.h \
  F:/ANCIT_Projects/PRO_SH/board/peripherals_edma_config_1.h \
+<<<<<<< HEAD
  ../SDK/platform/drivers/inc/edma_driver.h ../src/interior_light_model.h \
+=======
+ ../SDK/platform/drivers/inc/edma_driver.h \
+ F:/ANCIT_Projects/PRO_SH/board/peripherals_pwm_pal_1.h \
+ ../SDK/platform/pal/inc/pwm_pal.h \
+ F:/ANCIT_Projects/PRO_SH/SDK/platform/devices/callbacks.h \
+ ../SDK/platform/pal/inc/pwm_pal_mapping.h \
+ F:/ANCIT_Projects/PRO_SH/board/pwm_pal_cfg.h \
+ ../SDK/platform/drivers/inc/ftm_pwm_driver.h \
+ ../SDK/platform/drivers/inc/ftm_common.h \
+ ../SDK/platform/drivers/inc/ftm_common.h ../src/interior_light_model.h \
+>>>>>>> 848f3a0 (final_commit)
  ../src/rtwtypes.h ../src/interior_light_model_types.h
 
 F:/ANCIT_Projects/PRO_SH/board/sdk_project_config.h:
@@ -57,6 +69,25 @@ F:/ANCIT_Projects/PRO_SH/board/peripherals_edma_config_1.h:
 
 ../SDK/platform/drivers/inc/edma_driver.h:
 
+<<<<<<< HEAD
+=======
+F:/ANCIT_Projects/PRO_SH/board/peripherals_pwm_pal_1.h:
+
+../SDK/platform/pal/inc/pwm_pal.h:
+
+F:/ANCIT_Projects/PRO_SH/SDK/platform/devices/callbacks.h:
+
+../SDK/platform/pal/inc/pwm_pal_mapping.h:
+
+F:/ANCIT_Projects/PRO_SH/board/pwm_pal_cfg.h:
+
+../SDK/platform/drivers/inc/ftm_pwm_driver.h:
+
+../SDK/platform/drivers/inc/ftm_common.h:
+
+../SDK/platform/drivers/inc/ftm_common.h:
+
+>>>>>>> 848f3a0 (final_commit)
 ../src/interior_light_model.h:
 
 ../src/rtwtypes.h:

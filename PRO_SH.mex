@@ -35,11 +35,6 @@
                </options>
                <dependencies/>
                <pins>
-                  <pin peripheral="PORTD" signal="port, 15" pin_num="22" pin_signal="PTD15">
-                     <pin_features>
-                        <pin_feature name="direction" value="OUTPUT"/>
-                     </pin_features>
-                  </pin>
                   <pin peripheral="PORTC" signal="port, 6" pin_num="81" pin_signal="PTC6">
                      <pin_features>
                         <pin_feature name="direction" value="INPUT"/>
@@ -47,6 +42,11 @@
                   </pin>
                   <pin peripheral="CAN0" signal="rxd, rxd" pin_num="9" pin_signal="PTE4"/>
                   <pin peripheral="CAN0" signal="txd, txd" pin_num="8" pin_signal="PTE5"/>
+                  <pin peripheral="FTM0" signal="ch, 0" pin_num="22" pin_signal="PTD15">
+                     <pin_features>
+                        <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
                </pins>
             </function>
          </functions_list>
@@ -264,6 +264,16 @@
                   <data type="Version">1.0.0</data>
                </feature>
             </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.pal.pwm_pal" description="PWM PAL is not found in the toolchain/IDE project. The project will not compile!" problem_level="2" source="Peripherals">
+               <feature name="enabled" evaluation="equal">
+                  <data type="Boolean">true</data>
+               </feature>
+            </dependency>
+            <dependency resourceType="SWComponent" resourceId="platform.pal.pwm_pal" description="An unsupported version of the PWM PAL in the toolchain/IDE project. Required: ${required_value}, actual: ${actual_value}. The project might not compile correctly." problem_level="1" source="Peripherals">
+               <feature name="version" evaluation="equivalent">
+                  <data type="Version">1.0.0</data>
+               </feature>
+            </dependency>
             <dependency resourceType="Tool" resourceId="Clocks" description="The Clocks tool is required by the Peripherals tool, but it is disabled." problem_level="2" source="Peripherals">
                <feature name="enabled" evaluation="equal">
                   <data>true</data>
@@ -277,6 +287,9 @@
             <file path="board/peripherals_flexcan_config_1.h" update_enabled="true"/>
             <file path="board/peripherals_osif_1.c" update_enabled="true"/>
             <file path="board/peripherals_osif_1.h" update_enabled="true"/>
+            <file path="board/peripherals_pwm_pal_1.c" update_enabled="true"/>
+            <file path="board/peripherals_pwm_pal_1.h" update_enabled="true"/>
+            <file path="board/pwm_pal_cfg.h" update_enabled="true"/>
             <file path="board/sdk_project_config.h" update_enabled="true"/>
          </generated_project_files>
          <peripherals_profile>
@@ -346,6 +359,34 @@
                               </struct>
                            </array>
                         </struct>
+                     </config_set>
+                  </instance>
+                  <instance name="pwm_pal_1" uuid="e6071904-f4bd-4d87-8877-6c1e7d2f115e" type="pwm_pal_config" type_id="pwm_pal" mode="general" peripheral="FTM_0" enabled="true" comment="" custom_name_enabled="false" editing_lock="false">
+                     <config_set name="pwm_pal">
+                        <struct name="pwmGlobalDeadtimeConfig">
+                           <setting name="deadtime" value="0"/>
+                        </struct>
+                        <array name="pwmGlobalConfigArray">
+                           <struct name="0">
+                              <setting name="name" value="config_pwm_pal_0"/>
+                              <setting name="channel" value="0"/>
+                              <setting name="channelType" value="PWM_EDGE_ALIGNED"/>
+                              <setting name="period" value="100"/>
+                              <setting name="duty" value="50"/>
+                              <setting name="polarity" value="PWM_ACTIVE_LOW"/>
+                              <setting name="insertDeadtime" value="false"/>
+                              <setting name="enableComplementaryChannel" value="false"/>
+                              <setting name="complementaryChannelPolarity" value="PWM_DUPLICATED"/>
+                              <setting name="timebase" value="Timebase 0"/>
+                           </struct>
+                        </array>
+                        <array name="pwmTimebaseConfigArray">
+                           <struct name="0">
+                              <setting name="sourceClock" value="FTM_CLOCK_SOURCE_SYSTEMCLK"/>
+                              <setting name="prescaler" value="FTM_CLOCK_DIVID_BY_1"/>
+                              <setting name="deadtimePrescaler" value="FTM_DEADTIME_DIVID_BY_1"/>
+                           </struct>
+                        </array>
                      </config_set>
                   </instance>
                </instances>

@@ -26,8 +26,10 @@ SDK/platform/devices \
 SDK/platform/drivers/src/clock/S32K1xx \
 SDK/platform/drivers/src/edma \
 SDK/platform/drivers/src/flexcan \
+SDK/platform/drivers/src/ftm \
 SDK/platform/drivers/src/interrupt \
 SDK/platform/drivers/src/pins \
+SDK/platform/pal/src/pwm \
 SDK/rtos/osif \
 board \
 src \

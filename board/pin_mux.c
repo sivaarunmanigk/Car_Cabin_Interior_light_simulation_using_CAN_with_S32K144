@@ -36,10 +36,10 @@ processor_version: 0.0.0
 BOARD_InitPins:
 - options: {callFromInitBoot: 'true', coreID: core0}
 - pin_list:
-  - {pin_num: '22', peripheral: PORTD, signal: 'port, 15', pin_signal: PTD15, direction: OUTPUT}
   - {pin_num: '81', peripheral: PORTC, signal: 'port, 6', pin_signal: PTC6, direction: INPUT}
   - {pin_num: '9', peripheral: CAN0, signal: 'rxd, rxd', pin_signal: PTE4}
   - {pin_num: '8', peripheral: CAN0, signal: 'txd, txd', pin_signal: PTE5}
+  - {pin_num: '22', peripheral: FTM0, signal: 'ch, 0', pin_signal: PTD15, direction: OUTPUT}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -67,14 +67,12 @@ pin_settings_config_t g_pin_mux_InitConfigArr0[NUM_OF_CONFIGURED_PINS0] = {
         .pullConfig      = PORT_INTERNAL_PULL_NOT_ENABLED,
         .driveSelect     = PORT_LOW_DRIVE_STRENGTH,
         .passiveFilter   = false,
-        .mux             = PORT_MUX_AS_GPIO,
+        .mux             = PORT_MUX_ALT2,
         .pinLock         = false,
         .intConfig       = PORT_DMA_INT_DISABLED,
         .clearIntFlag    = false,
-        .gpioBase        = PTD,
-        .direction       = GPIO_OUTPUT_DIRECTION,
+        .gpioBase        = NULL,
         .digitalFilter   = false,
-        .initValue       = 0U,
     },
     {
         .base            = PORTE,

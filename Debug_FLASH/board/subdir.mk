@@ -8,6 +8,7 @@ C_SRCS += \
 ../board/peripherals_edma_config_1.c \
 ../board/peripherals_flexcan_config_1.c \
 ../board/peripherals_osif_1.c \
+../board/peripherals_pwm_pal_1.c \
 ../board/pin_mux.c 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./board/peripherals_edma_config_1.o \
 ./board/peripherals_flexcan_config_1.o \
 ./board/peripherals_osif_1.o \
+./board/peripherals_pwm_pal_1.o \
 ./board/pin_mux.o 
 
 C_DEPS += \
@@ -22,6 +24,7 @@ C_DEPS += \
 ./board/peripherals_edma_config_1.d \
 ./board/peripherals_flexcan_config_1.d \
 ./board/peripherals_osif_1.d \
+./board/peripherals_pwm_pal_1.d \
 ./board/pin_mux.d 
 
 

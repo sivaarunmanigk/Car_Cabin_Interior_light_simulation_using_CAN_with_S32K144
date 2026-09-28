@@ -21,6 +21,7 @@
 #include "peripherals_flexcan_config_1.h"
 #include "peripherals_osif_1.h"
 #include "peripherals_edma_config_1.h"
+#include "peripherals_pwm_pal_1.h"
 
 
 #endif /* SDK_PROJECT_CONFIG_H_ */
