@@ -266,7 +266,6 @@ The system was tested on the actual **S32K144** development board using CAN mess
 | 7 | All doors close again | `00` | Interior light fades OFF | Tested on hardware |
 | 8 | PWM polarity check | – | Brightness matches duty cycle on the actual board | Validated on hardware |
 
-> 📎 **TODO (author):** Attach evidence (TS Master trace, waveform capture, photos) for the rows above.
 
 ---
 
